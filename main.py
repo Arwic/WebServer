@@ -35,10 +35,10 @@ def form_echo(conn, req):
 
 urlpatterns = [
     ("^ajax/echo$", ajax_echo),
+    ("^form/echo$", form_echo),
+    ("^favicon.ico$", serve_static),
     ("^static/", serve_static),
     ("^index/$", view_index),
-    ("^form/echo", form_echo),
-    ("^favicon.ico$", serve_static),
     ("^$", view_index),
 ]
 
