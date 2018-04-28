@@ -1,11 +1,28 @@
+<!--
+Copyright (c) Timothy Ings <tim@tim-ings.com>
+All Rights Reserved
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test Title</title>
+    <title>Cats are Cool</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Test Page</h1>
-    <img src="/cat.jpg">
+    <h1>Look at this cat!</h1>
+    <img src="static/img/cat.jpg">
+    <form action="/form/echo" method="post">
+        <label>Form Submit Test:</label>
+        <input type="text" name="field1">
+        <button type="submit">Submit</button>
+    </form>
+    <form>
+        <label>JSON Test:</label>
+        <input type="text" id="jsonVal">
+        <input type="button" onclick="OnJsonButtonClick()" value="Echo Value">
+    </form>
+    <script src="static/js/ajax_test.js"></script>
 </body>
 </html>
